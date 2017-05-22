@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LayoutDemo</string>
+    <string name="news_id">Mã tin</string>
+    <string name="location">Địa điểm</string>
+    <string name="car_status">Tình trạng xe</string>
+    <string name="car_from">Xuất xứ</string>
+    <string name="car_category">Kiểu dáng</string>
+    <string name="car_manufactured_at">Năm sản xuất</string>
+    <string name="news_created_at">Ngày đăng</string>
+    <string name="forgot_password_msg">Hãy nhập email bạn đã đăng kí với banxehoi.com. Chúng tôi sẽ gửi email lấy lại mật khẩu tới hòm thư của bạn. Vui lòng kiểm tra cả hòm thư Spam</string>
+    <string name="input_email_msg">Nhập đúng email của bạn</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="signup_msg">Bạn chưa có tài khoản? Hãy đăng kí ngay</string>
+    <string name="price_range">Khoảng giá</string>
+    <string name="fuel">Nhiên liệu</string>
+    <string name="gearbox">Hộp số</string>
+    <string name="prefecture">Tỉnh/Thành phố</string>
+    <string name="all">Tất cả</string>
+    <string name="new_str">Mới</string>
+    <string name="old">Cũ</string>
+    <string name="domestic">Trong nước</string>
+    <string name="international">Quốc tế</string>
+    <string name="remove_chosen">Bỏ chọn</string>
+    <string name="filter">Lọc</string>
+
+</resources>

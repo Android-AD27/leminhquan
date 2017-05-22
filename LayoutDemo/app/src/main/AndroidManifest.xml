@@ -21,7 +21,12 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".Login" />
         <activity android:name=".SearchForm" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".ArticleUp" />
+        <activity android:name=".Contact" />
+        <activity android:name=".ArticleRegister" />
+        <activity android:name=".AdvancedSearch" />
+        <activity android:name=".ArticleDetail"></activity>
     </application>
 
 </manifest>

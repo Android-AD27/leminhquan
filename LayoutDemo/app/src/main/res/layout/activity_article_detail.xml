@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mypc.layoutdemo.ArticleDetail">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_span="2"
+                android:text="Thong so ky thuat" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="dai x rong x cao" />
+
+            <TextView android:text="4580x1770x1750" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Trong luong khong tai (kg)" />
+
+            <TextView android:text="1550" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Dong co" />
+
+            <TextView android:text="XANG VVT-i" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Dung tich dong co" />
+
+            <TextView android:text="2000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Dung tich nhien lieu" />
+
+            <TextView android:text="55" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Phanh" />
+
+            <TextView android:text="Truoc dia, sau tang trong" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Bo giam xoc" />
+
+            <TextView android:text="He thong treo truoc doc lap" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Lop xe" />
+
+            <TextView android:text="205/65R15" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Vanh mam xe" />
+
+            <TextView android:text="Duc 15 inches" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xe cung loai" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xe cung khoang gia" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thong tin nguoi ban" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOYOTA HUNG VUONG" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="093306963" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="M" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="26 Kinh Duong Vuong, P.13, Q.6, Tp.HCM" />
+</LinearLayout>

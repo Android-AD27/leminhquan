@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile"
         android:layout_centerInParent="true"
-        android:text="UserName" />
+        android:hint="UserName" />
 
     <EditText
         android:id="@+id/password"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
         android:layout_centerInParent="true"
-        android:text="Password" />
+        android:hint="Password" />
 
     <Button
         android:layout_width="wrap_content"
@@ -47,6 +47,7 @@
         android:layout_below="@+id/password"
         android:id="@+id/btnLogin"
         android:layout_centerInParent="true"
+        android:background="@drawable/curve_border_green"
         android:text="Đăng nhập"/>
 
     <LinearLayout

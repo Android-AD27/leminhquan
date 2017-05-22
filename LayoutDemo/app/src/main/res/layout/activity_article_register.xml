@@ -14,7 +14,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hinh anh" />
+            style="@style/textBase"
+            android:text="@string/image_str" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -29,59 +30,65 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Che bien so" />
+                style="@style/textBase"
+                android:text="@string/hide_plate_str" />
 
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Co" />
+                style="@style/textBase"
+                android:text="@string/yes" />
 
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Khong" />
+                style="@style/textBase"
+                android:text="@string/no" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Video" />
+            style="@style/textBase"
+            android:text="@string/video" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhap link video cua ban" />
+            style="@style/textBase"
+            android:hint="@string/insert_your_video_link" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thong tin mo ta" />
+            style="@style/textBase"
+            android:text="@string/description" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Hang xe *:" />
+            android:text="@string/car_brand" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Loai xe *:" />
+            android:text="@string/car_type" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nam san xuat *:"
+            android:text="@string/car_manufactured_at"
             android:textAlignment="viewStart" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Phien ban" />
+            android:text="@string/car_version" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -89,17 +96,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Xuat xu:"/>
+                style="@style/textBase"
+                android:text="@string/car_from"/>
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Trong nuoc"/>
+                style="@style/textBase"
+                android:text="@string/domestic"/>
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
-                android:text="Nhap khau"/>
+                style="@style/textBase"
+                android:text="@string/international"/>
         </LinearLayout>
 
         <LinearLayout
@@ -109,54 +119,61 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
+                style="@style/textBase"
                 android:text="@string/car_status"/>
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
+                style="@style/textBase"
                 android:text="@string/new_str"/>
             <RadioButton
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="10"
+                style="@style/textBase"
                 android:text="@string/old"/>
         </LinearLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Mau ngoai that" />
+            android:text="@string/exterior_color" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thong tin co ban"/>
+            style="@style/textBase"
+            android:text="@string/basic_info"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhap so cua"/>
+            style="@style/textBase"
+            android:hint="@string/input_door_sum"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhap so cho ngoi"/>
+            style="@style/textBase"
+            android:hint="@string/input_seat_sum"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Hop so" />
+            android:text="@string/gearbox" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Dan dong" />
+            android:text="@string/driving" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
-            android:text="Nhien lieu" />
+            android:text="@string/fuel" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Muc tieu thu:"/>
+            style="@style/textBase"
+            android:text="@string/consumtion_level"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -164,12 +181,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Nhap muc tieu thu"/>
+                style="@style/textBase"
+                android:hint="@string/input_consumtion_level"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Do thi"/>
+                style="@style/textBase"
+                android:text="@string/city"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,17 +197,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Nhap muc tieu thu"/>
+                style="@style/textBase"
+                android:hint="@string/input_consumtion_level"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Duong truong"/>
+                style="@style/textBase"
+                android:text="@string/long_road"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thong so ky thuat"/>
+            android:text="@string/technical_spec"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -196,6 +217,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                style="@style/textBase"
                 android:text="Nhap kich thuoc dai x rong x cao (mm)"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -203,33 +225,39 @@
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    style="@style/textBase"
                     android:layout_weight="1"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
+                    style="@style/textBase"
                     android:text="X"/>
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    style="@style/textBase"
                     android:layout_weight="1"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="center"
+                    style="@style/textBase"
                     android:text="X"/>
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    style="@style/textBase"
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dang ki"/>
+            android:background="@drawable/curve_border_green"
+            android:text="@string/register"/>
     </LinearLayout>
 
 </ScrollView>

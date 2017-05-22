@@ -15,70 +15,93 @@
 
             <TextView
                 android:layout_span="2"
-                android:text="Thong so ky thuat" />
+                style="@style/textNormal"
+                android:text="@string/technical_spec" />
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="dai x rong x cao" />
+            <TextView android:text="dai x rong x cao"
+                style="@style/textBase"/>
 
-            <TextView android:text="4580x1770x1750" />
+            <TextView android:text="4580x1770x1750"
+                style="@style/textBase" />
+        </TableRow>
+
+        <TableRow
+            style="@style/striped_row">
+
+            <TextView android:text="Trong luong khong tai (kg)"
+                style="@style/textBase"/>
+
+            <TextView android:text="1550"
+                style="@style/textBase"/>
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Trong luong khong tai (kg)" />
+            <TextView android:text="Dong co"
+                style="@style/textBase"/>
 
-            <TextView android:text="1550" />
+            <TextView android:text="XANG VVT-i"
+                style="@style/textBase"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/striped_row">
+
+            <TextView android:text="Dung tich dong co"
+                style="@style/textBase"/>
+
+            <TextView android:text="2000"
+                style="@style/textBase"/>
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Dong co" />
+            <TextView android:text="Dung tich nhien lieu"
+                style="@style/textBase" />
 
-            <TextView android:text="XANG VVT-i" />
+            <TextView android:text="55"
+                style="@style/textBase"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/striped_row">
+
+            <TextView android:text="Phanh"
+                style="@style/textBase"/>
+
+            <TextView android:text="Truoc dia, sau tang trong"
+                style="@style/textBase"/>
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Dung tich dong co" />
+            <TextView android:text="Bo giam xoc"
+                style="@style/textBase"/>
 
-            <TextView android:text="2000" />
+            <TextView android:text="He thong treo truoc doc lap"
+                style="@style/textBase"/>
+        </TableRow>
+
+        <TableRow
+            style="@style/striped_row">
+
+            <TextView android:text="Lop xe"
+                style="@style/textBase"/>
+
+            <TextView android:text="205/65R15"
+                style="@style/textBase"/>
         </TableRow>
 
         <TableRow>
 
-            <TextView android:text="Dung tich nhien lieu" />
+            <TextView android:text="Vanh mam xe"
+                style="@style/textBase"/>
 
-            <TextView android:text="55" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView android:text="Phanh" />
-
-            <TextView android:text="Truoc dia, sau tang trong" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView android:text="Bo giam xoc" />
-
-            <TextView android:text="He thong treo truoc doc lap" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView android:text="Lop xe" />
-
-            <TextView android:text="205/65R15" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView android:text="Vanh mam xe" />
-
-            <TextView android:text="Duc 15 inches" />
+            <TextView android:text="Duc 15 inches"
+                style="@style/textBase"/>
         </TableRow>
 
         <TableRow>
@@ -87,24 +110,30 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Xe cung loai" />
+                android:background="@drawable/curve_border_green"
+                android:layout_margin="5dp"
+                android:text="@string/same_type_car" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Xe cung khoang gia" />
+                android:background="@drawable/curve_border_green"
+                android:layout_margin="5dp"
+                android:text="@string/same_price_range_car" />
         </TableRow>
     </TableLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thong tin nguoi ban" />
+        style="@style/textBase"
+        android:text="@string/seller_info" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/txtBlue"
         android:text="TOYOTA HUNG VUONG" />
 
     <LinearLayout
@@ -116,6 +145,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="6"
+            style="@style/txtGreen"
             android:text="093306963" />
 
         <Button
@@ -140,5 +170,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/textBase"
         android:text="26 Kinh Duong Vuong, P.13, Q.6, Tp.HCM" />
 </LinearLayout>

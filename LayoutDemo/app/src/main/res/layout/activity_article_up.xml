@@ -11,36 +11,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Chon loai tin rao" />
+        android:text="@string/choose_article_type" />
 
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Tin thuong" />
+        android:text="@string/article_type_normal" />
 
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Tin thuong" />
+        android:text="@string/article_type_vip_2" />
 
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Tin thuong" />
+        android:text="@string/article_type_vip_1" />
 
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Tin thuong" />
+        android:text="@string/article_type_vip_pro" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/textNormal"
-        android:text="Thoi gian dang"/>
+        android:text="@string/register_date"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="10"
             style="@style/textNormal"
-            android:text="Up tin tu dong"/>
+            android:text="@string/auto_up_article"/>
         <Switch
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/textNormal"
-            android:text="Thanh tien: "/>
+            android:text="@string/total_money"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,9 +86,9 @@
             android:text="0 VND"/>
     </LinearLayout>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        style="@style/textNormal"
-        android:text='Luu va Tiep tuc'/>
+        android:background="@drawable/curve_border_green"
+        android:text='@string/save_and_continue'/>
 </LinearLayout>

@@ -20,6 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="Sắp xếp tin rao" />
 
         <Button
@@ -38,12 +39,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/textNormal"
             android:text="@string/price_range" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            style="@style/textNormal"
             android:text="@string/all" />
     </LinearLayout>
 
@@ -54,12 +57,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/textNormal"
             android:text="@string/car_manufactured_at" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            style="@style/textNormal"
             android:text="@string/all" />
     </LinearLayout>
 
@@ -71,18 +76,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="20"
+            style="@style/textNormal"
             android:text="@string/car_status" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="@string/new_str" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="@string/old" />
     </LinearLayout>
 
@@ -94,6 +102,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="20"
+            style="@style/textNormal"
             android:text="@string/car_from" />
 
         <TextView
@@ -118,6 +127,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="@string/fuel" />
 
         <Button
@@ -138,6 +148,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="@string/gearbox" />
 
         <Button
@@ -158,6 +169,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            style="@style/textNormal"
             android:text="@string/prefecture" />
 
         <Button
@@ -176,13 +188,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
+            android:background="@drawable/curve_border_blue"
+            android:layout_margin="5dp"
             android:text="@string/remove_chosen" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="20"
-            style="@style/btnSearch"
+            android:background="@drawable/curve_border_green"
+            android:layout_margin="5dp"
             android:text="@string/filter" />
     </LinearLayout>
 

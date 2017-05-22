@@ -11,6 +11,8 @@
     <style name="textBase">
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
     </style>
     <style name="textHeader" parent="textBase">
         <item name="android:textSize">40dp</item>
@@ -25,6 +27,21 @@
     </style>
     <style name="btnSearch">
         <item name="android:background">@android:color/holo_green_dark</item>
+    </style>
+    <style name="btn_green">
+        <item name="android:background">@android:color/holo_green_light</item>
+    </style>
+    <style name="btn_blue">
+        <item name="android:background">@android:color/holo_blue_bright</item>
+    </style>
+    <style name="txtBlue" parent="textBase">
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+    </style>
+    <style name="txtGreen" parent="textBase">
+        <item name="android:textColor">@android:color/holo_green_light</item>
+    </style>
+    <style name="striped_row">
+        <item name="android:background">#c3d6f4</item>
     </style>
 
 </resources>

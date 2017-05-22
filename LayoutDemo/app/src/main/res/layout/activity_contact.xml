@@ -10,12 +10,24 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thong tin lien lac" />
+        style="@style/textNormal"
+        android:text="@string/contact_info" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ho ten *:" />
+        style="@style/textNormal"
+        android:text="@string/contact_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textNormal"
+        android:text="@string/contact_address" />
 
     <EditText
         android:layout_width="match_parent"
@@ -24,15 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dia chi:" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textNormal"
         android:text="@string/prefecture" />
 
     <EditText
@@ -42,7 +46,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="So dien thoai *:" />
+        style="@style/textNormal"
+        android:text="@string/contact_phone_number" />
 
     <EditText
         android:layout_width="match_parent"
@@ -51,7 +56,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email :" />
+        style="@style/textNormal"
+        android:text="@string/contact_email" />
 
     <EditText
         android:layout_width="match_parent"
@@ -60,7 +66,7 @@
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nhan email phan hoi"/>
+        android:text="@string/receive_feed_back_email"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,11 +76,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:text="Xem truoc"/>
+            android:layout_margin="5dp"
+            android:background="@drawable/curve_border_blue"
+            android:text="@string/preview"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:text="Luu va Dang tin"/>
+            android:layout_margin="5dp"
+            android:background="@drawable/curve_border_green"
+            android:text="@string/save_and_register"/>
     </LinearLayout>
 </LinearLayout>

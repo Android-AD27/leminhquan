@@ -32,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:text="Chi phí lăn bánh"/>
+            android:background="@drawable/curve_border_green"
+            android:text="@string/run_fee"/>
 
     </LinearLayout>
 
@@ -93,7 +94,7 @@
             android:layout_height="match_parent"
             android:layout_weight="10"
             style="@style/textBase"
-            android:text="Mới" />
+            android:text="@string/new_str" />
     </LinearLayout>
 
     <LinearLayout
@@ -113,7 +114,7 @@
             android:layout_height="match_parent"
             android:layout_weight="10"
             style="@style/textBase"
-            android:text="Trong nước" />
+            android:text="@string/domestic" />
     </LinearLayout>
 
     <LinearLayout

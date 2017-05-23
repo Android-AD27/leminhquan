@@ -8,25 +8,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".car_detail" />
-        <activity android:name=".BrandList" />
-        <activity android:name=".ListByBrands" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".Login" />
-        <activity android:name=".SearchForm" />
-        <activity android:name=".Profile" />
-        <activity android:name=".ArticleUp" />
-        <activity android:name=".Contact" />
-        <activity android:name=".ArticleRegister" />
-        <activity android:name=".AdvancedSearch" />
-        <activity android:name=".ArticleDetail"></activity>
+        <activity android:name=".activity.car_detail" />
+        <activity android:name=".activity.BrandList" />
+        <activity android:name=".activity.ListByBrands" />
+        <activity android:name=".activity.ForgotPassword" />
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.SearchForm" />
+        <activity android:name=".activity.Profile" />
+        <activity android:name=".activity.ArticleUp" />
+        <activity android:name=".activity.Contact" />
+        <activity android:name=".activity.ArticleRegister" />
+        <activity android:name=".activity.AdvancedSearch" />
+        <activity android:name=".activity.ArticleDetail"/>
     </application>
 
 </manifest>

@@ -1,14 +1,19 @@
 package com.example.mypc.layoutdemo.model;
 
+import android.os.Parcelable;
+
 import com.example.mypc.layoutdemo.R;
 
+import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by leminhquan on 23/05/2017.
  */
 
-public class Article {
+public class Article implements Serializable{
+
     int articleId;
     int articleThumb;
     int brandId;
@@ -18,8 +23,10 @@ public class Article {
     int madeInTag;
     int locationTag;
     Date registerDate;
+    List<Property> properties;
+    Seller seller;
 
-    public Article(int articleId, int articleThumb, int brandId, String price, String title, int statusTag, int madeInTag, int locationTag, Date registerDate) {
+    public Article(int articleId, int articleThumb, int brandId, String price, String title, int statusTag, int madeInTag, int locationTag, Date registerDate, List<Property> properties, Seller seller) {
         this.articleId = articleId;
         this.articleThumb = articleThumb;
         this.brandId = brandId;
@@ -29,6 +36,8 @@ public class Article {
         this.madeInTag = madeInTag;
         this.locationTag = locationTag;
         this.registerDate = registerDate;
+        this.properties = properties;
+        this.seller = seller;
     }
 
     public int getArticleId() {
@@ -103,4 +112,19 @@ public class Article {
         this.articleThumb = articleThumb;
     }
 
+    public List<Property> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(List<Property> properties) {
+        this.properties = properties;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Seller seller) {
+        this.seller = seller;
+    }
 }

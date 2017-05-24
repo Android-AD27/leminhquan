@@ -1,6 +1,7 @@
 package com.example.mypc.layoutdemo.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ import com.example.mypc.layoutdemo.R;
 import com.example.mypc.layoutdemo.business.ArticleBussiness;
 import com.example.mypc.layoutdemo.model.Article;
 
+import org.w3c.dom.Text;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -21,10 +24,15 @@ import java.util.List;
  */
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.HolderView> {
+    public interface ArticleClickListener{
+        void onClick(Article itemArticle );
+    }
+    ArticleClickListener listener;
     List<Article> listArticle;
 
-    public ArticleAdapter(List<Article> listArticle) {
+    public ArticleAdapter(List<Article> listArticle, ArticleClickListener listener) {
         this.listArticle = listArticle;
+        this.listener = listener;
     }
 
     @Override
@@ -37,9 +45,10 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.HolderVi
     @Override
     public void onBindViewHolder(HolderView holder, int position) {
         ArticleBussiness buArticle = new ArticleBussiness(holder.mContext);
-        Article itemArticle = listArticle.get(position);
+        final Article itemArticle = listArticle.get(position);
 
         // Bind data into item
+        holder.articleId.setText(Integer.toString(itemArticle.getArticleId()));
         holder.articleThumbnail.setImageResource(itemArticle.getArticleThumb());
         holder.articleTitle.setText(itemArticle.getTitle());
         holder.articlePrice.setText(itemArticle.getPrice());
@@ -52,7 +61,14 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.HolderVi
 
 //        holder.locationTagImg.setImageResource(itemArticle.getLocationTag());
         holder.locationTagText.setText(buArticle.getLocationTagText(itemArticle.getLocationTag()));
-
+        holder.vArticle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(listener!=null){
+                    listener.onClick(itemArticle);
+                }
+            }
+        });
     }
 
     @Override
@@ -61,7 +77,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.HolderVi
     }
 
     static class HolderView extends RecyclerView.ViewHolder {
+        View vArticle;
         Context mContext;
+        TextView articleId;
         ImageView articleThumbnail;
         TextView articlePrice;
         TextView articleRegisterDate;
@@ -77,6 +95,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.HolderVi
         public HolderView(View itemView, Context mContext) {
             super(itemView);
             this.mContext = mContext;
+            vArticle = itemView.findViewById(R.id.ln_article);
+            articleId = (TextView) itemView.findViewById(R.id.article_id);
             articleThumbnail = (ImageView) itemView.findViewById(R.id.article_thumbnail);
             articlePrice = (TextView) itemView.findViewById(R.id.article_price);
             articleRegisterDate = (TextView) itemView.findViewById(R.id.article_register_date);

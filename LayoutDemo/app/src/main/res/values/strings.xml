@@ -79,6 +79,15 @@
     <string name="receive_feed_back_email">Nhận email phản hồi</string>
     <string name="preview">Xem trước</string>
     <string name="save_and_register">Lưu và đăng tin</string>
+    <string name="prop1">Dài x rộng x cao (mm)</string>
+    <string name="prop2">Trọng lượng không tải (kg)</string>
+    <string name="prop3">Động cơ</string>
+    <string name="prop4">Dung tích động cơ</string>
+    <string name="prop5">Dung tích nhiên liệu</string>
+    <string name="prop6">Phanh</string>
+    <string name="prop7">Bộ giảm xóc</string>
+    <string name="prop8">Lốp xe</string>
+    <string name="prop9">Vành mâm xe</string>
 
 
 </resources>

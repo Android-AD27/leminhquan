@@ -33,6 +33,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:background="@drawable/curve_border_green"
+                android:padding="10dp"
                 android:text="700 triệu" />
             <TextView
                 android:id="@+id/article_register_date"
